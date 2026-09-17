@@ -1,0 +1,26 @@
+# [Your Name]
+
+> Fractional GTM engineer providing GTM audits, consulting, freelance execution, and
+> fractional embedded engineering for early-stage B2B companies. Replace this file's
+> placeholders once site copy is finalized.
+
+## Services
+- Audit: a prioritized teardown of an existing GTM stack, funnel, and CRM, ranked by revenue impact.
+- Consulting: GTM architecture, process design, and system reviews.
+- Freelance execution: hands-on build of routing, enrichment, automation, and reporting.
+- Fractional GTM engineering: ongoing embedded execution without a full-time hire.
+
+## Who this is for
+Early-stage B2B companies, typically seed through Series B, with a founder or small GTM
+team that has outgrown manual processes but has not yet built or hired a dedicated
+RevOps function.
+
+## Tools worked in
+HubSpot, Salesforce, Attio, Clay, Apollo, ZoomInfo, Clearbit, Hunter, Smartlead,
+Instantly, Outreach, Salesloft, HeyReach, n8n, Make, Zapier, Workato, LinkedIn Sales
+Navigator, RB2B, Crunchbase, Bombora, Claude, OpenAI, Cursor, BigQuery, Snowflake,
+Databricks, Segment.
+
+## Contact
+- Email: hello@example.com (placeholder)
+- Book a call: https://cal.com/your-handle/gtm-audit (placeholder)

@@ -1,0 +1,82 @@
+{
+  "hubspot": {
+    "mark": "/logos/mark/hubspot.svg",
+    "wordmark": "/logos/wordmark/hubspot.svg"
+  },
+  "salesforce": {
+    "mark": "/logos/mark/salesforce.svg",
+    "wordmark": "/logos/wordmark/salesforce.svg"
+  },
+  "attio": {
+    "mark": "/logos/mark/attio.svg",
+    "wordmark": "/logos/wordmark/attio.svg"
+  },
+  "clay": {
+    "mark": "/logos/mark/clay.png",
+    "wordmark": "/logos/wordmark/clay.png"
+  },
+  "apollo": {
+    "mark": "/logos/mark/apollo.svg",
+    "wordmark": "/logos/wordmark/apollo.svg"
+  },
+  "zoominfo": {
+    "mark": "/logos/mark/zoominfo.svg",
+    "wordmark": "/logos/wordmark/zoominfo.svg"
+  },
+  "clearbit": {
+    "mark": "/logos/mark/clearbit.svg",
+    "wordmark": "/logos/wordmark/clearbit.svg"
+  },
+  "hunter": {
+    "mark": "/logos/mark/hunter.svg",
+    "wordmark": "/logos/wordmark/hunter.svg"
+  },
+  "smartlead": {
+    "mark": "/logos/mark/smartlead.png",
+    "wordmark": "/logos/wordmark/smartlead.png"
+  },
+  "instantly": {
+    "mark": "/logos/mark/instantly.png",
+    "wordmark": "/logos/wordmark/instantly.svg"
+  },
+  "outreach": {
+    "mark": "/logos/mark/outreach.svg",
+    "wordmark": "/logos/wordmark/outreach.svg"
+  },
+  "salesloft": {
+    "mark": "/logos/mark/salesloft.jpg",
+    "wordmark": "/logos/wordmark/salesloft.svg"
+  },
+  "heyreach": {
+    "mark": "/logos/mark/heyreach.svg",
+    "wordmark": "/logos/wordmark/heyreach.svg"
+  },
+  "n8n": {
+    "mark": "/logos/mark/n8n.svg",
+    "wordmark": "/logos/wordmark/n8n.svg"
+  },
+  "make": {
+    "mark": "/logos/mark/make.svg"
+  },
+  "zapier": {
+    "mark": "/logos/mark/zapier.svg"
+  },
+  "crunchbase": {
+    "mark": "/logos/mark/crunchbase.svg"
+  },
+  "claude": {
+    "mark": "/logos/mark/claude.svg"
+  },
+  "cursor": {
+    "mark": "/logos/mark/cursor.svg"
+  },
+  "bigquery": {
+    "mark": "/logos/mark/bigquery.svg"
+  },
+  "snowflake": {
+    "mark": "/logos/mark/snowflake.svg"
+  },
+  "databricks": {
+    "mark": "/logos/mark/databricks.svg"
+  }
+}
