@@ -68,7 +68,7 @@ export const stackLayers: StackLayer[] = [
       { name: "Claude", slug: "claude" },
       { name: "OpenAI", slug: "openai" },
       { name: "Cursor", slug: "cursor" },
-      { name: "Claygent", slug: "claygent" },
+      { name: "Replit", slug: "replit" },
     ],
   },
   {
@@ -78,7 +78,7 @@ export const stackLayers: StackLayer[] = [
       { name: "BigQuery", slug: "bigquery" },
       { name: "Snowflake", slug: "snowflake" },
       { name: "Databricks", slug: "databricks" },
-      { name: "Segment", slug: "segment" },
+      { name: "Supabase", slug: "supabase" },
     ],
   },
 ];

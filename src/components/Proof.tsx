@@ -1,6 +1,14 @@
 import { caseStudies } from "@/content/proof";
 import { Reveal } from "@/components/Reveal";
 import { RoutingDiagram } from "@/components/diagrams/RoutingDiagram";
+import { OutboundDiagram } from "@/components/diagrams/OutboundDiagram";
+import { CrmDiagram } from "@/components/diagrams/CrmDiagram";
+
+const diagramsById: Record<string, React.ComponentType> = {
+  "case-1": RoutingDiagram,
+  "case-2": OutboundDiagram,
+  "case-3": CrmDiagram,
+};
 
 export function Proof() {
   return (
@@ -47,11 +55,15 @@ export function Proof() {
                     </div>
                   </div>
 
-                  {study.hasDiagram && (
-                    <div className="glass-panel diagram-grid rounded-card p-5">
-                      <RoutingDiagram />
-                    </div>
-                  )}
+                  {study.hasDiagram &&
+                    (() => {
+                      const Diagram = diagramsById[study.id];
+                      return Diagram ? (
+                        <div className="glass-panel diagram-grid rounded-card p-5">
+                          <Diagram />
+                        </div>
+                      ) : null;
+                    })()}
                 </div>
               </div>
             </Reveal>

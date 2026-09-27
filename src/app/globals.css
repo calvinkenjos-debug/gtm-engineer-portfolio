@@ -113,20 +113,27 @@ body {
 }
 
 /* Glass panels: the floating translucent-card language from the design
-   reference, reapplied on our ink/paper palette instead of photography. */
+   reference. Frosted with a visible accent color bleed-through (not just
+   blur+border) so panels read as glass sitting over photography/gradients
+   behind them, per the Superhuman reference. */
 .glass-panel {
-  background: var(--glass-bg);
+  background: linear-gradient(135deg, var(--glass-bg), color-mix(in srgb, var(--color-accent) 14%, transparent));
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: var(--glass-shadow), 0 0 28px -10px color-mix(in srgb, var(--color-accent) 45%, transparent);
 }
 
 .glass-panel-dark {
-  background: var(--glass-bg-dark);
+  background: linear-gradient(
+    135deg,
+    var(--glass-bg-dark),
+    color-mix(in srgb, var(--color-accent) 22%, transparent)
+  );
   border: 1px solid var(--glass-border-dark);
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 0 28px -10px color-mix(in srgb, var(--color-accent) 55%, transparent);
 }
 
 /* Hero / CTA atmosphere: soft layered radial glow behind glass panels,

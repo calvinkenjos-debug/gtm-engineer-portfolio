@@ -2,6 +2,7 @@ import { stackLayers } from "@/content/stack";
 import { Reveal } from "@/components/Reveal";
 import { ToolLogo } from "@/components/ToolLogo";
 import { WaterfallDiagram } from "@/components/diagrams/WaterfallDiagram";
+import { StackOrb } from "@/components/diagrams/StackOrb";
 
 export function Systems() {
   return (
@@ -43,18 +44,33 @@ export function Systems() {
             ))}
           </div>
 
-          <Reveal delay={0.1}>
-            <div className="glass-panel rounded-card p-6 lg:sticky lg:top-24">
-              <span className="mono-tag text-ink-faint">Waterfall enrichment</span>
-              <div className="diagram-grid mt-6 rounded-tag">
-                <WaterfallDiagram />
+          <div className="flex flex-col gap-6 lg:sticky lg:top-24">
+            <Reveal delay={0.1}>
+              <div className="glass-panel rounded-card p-6">
+                <span className="mono-tag text-ink-faint">One connected stack</span>
+                <div className="mt-6">
+                  <StackOrb />
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-ink-secondary">
+                  Every layer on the left talks to the others. It isn&apos;t a pile of subscriptions, it&apos;s wired
+                  into a single operating system.
+                </p>
               </div>
-              <p className="mt-4 text-sm leading-relaxed text-ink-secondary">
-                Every provider gets queried in a fixed order. The first one to return a usable field wins that field,
-                so a contact record never depends on a single vendor&apos;s coverage.
-              </p>
-            </div>
-          </Reveal>
+            </Reveal>
+
+            <Reveal delay={0.16}>
+              <div className="glass-panel rounded-card p-6">
+                <span className="mono-tag text-ink-faint">Waterfall enrichment</span>
+                <div className="diagram-grid mt-6 rounded-tag">
+                  <WaterfallDiagram />
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-ink-secondary">
+                  Every provider gets queried in a fixed order. The first one to return a usable field wins that
+                  field, so a contact record never depends on a single vendor&apos;s coverage.
+                </p>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </div>
     </section>

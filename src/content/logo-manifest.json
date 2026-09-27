@@ -78,5 +78,33 @@
   },
   "databricks": {
     "mark": "/logos/mark/databricks.svg"
+  },
+  "workato": {
+    "mark": "/logos/mark/workato.svg",
+    "wordmark": "/logos/wordmark/workato.svg"
+  },
+  "linkedin": {
+    "mark": "/logos/mark/linkedin.svg",
+    "wordmark": "/logos/wordmark/linkedin.svg"
+  },
+  "rb2b": {
+    "mark": "/logos/mark/rb2b.jpg",
+    "wordmark": "/logos/wordmark/rb2b.svg"
+  },
+  "bombora": {
+    "mark": "/logos/mark/bombora.jpg",
+    "wordmark": "/logos/wordmark/bombora.svg"
+  },
+  "openai": {
+    "mark": "/logos/mark/openai.svg",
+    "wordmark": "/logos/wordmark/openai.svg"
+  },
+  "replit": {
+    "mark": "/logos/mark/replit.svg",
+    "wordmark": "/logos/wordmark/replit.svg"
+  },
+  "supabase": {
+    "mark": "/logos/mark/supabase.png",
+    "wordmark": "/logos/wordmark/supabase.svg"
   }
 }

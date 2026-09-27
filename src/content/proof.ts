@@ -32,6 +32,7 @@ export const caseStudies: CaseStudy[] = [
     fix:
       "[Describe the fix: e.g. n8n pipeline connecting intent signals to Smartlead sequencing with automatic CRM logging.]",
     result: "[Add a real, verifiable metric, e.g. hours saved per week, reply rate change.]",
+    hasDiagram: true,
   },
   {
     id: "case-3",
@@ -42,5 +43,6 @@ export const caseStudies: CaseStudy[] = [
     fix:
       "[Describe the fix: e.g. field governance, lifecycle stage rebuild, attribution model tied to a single BigQuery source of truth.]",
     result: "[Add a real, verifiable metric, e.g. time to close the books on monthly reporting.]",
+    hasDiagram: true,
   },
 ];

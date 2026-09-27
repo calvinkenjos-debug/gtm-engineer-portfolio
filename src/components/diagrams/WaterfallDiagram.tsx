@@ -40,6 +40,7 @@ export function WaterfallDiagram() {
           key={source.slug}
           label={source.name}
           tool={{ name: source.name, slug: source.slug }}
+          logoOnly
           style={{ left: "2%", top: source.top, width: "24%", height: "15%" }}
         />
       ))}

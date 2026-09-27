@@ -46,10 +46,11 @@ const TOOLS = {
   claude: "anthropic.com",
   openai: "openai.com",
   cursor: "cursor.com",
+  replit: "replit.com",
   bigquery: "cloud.google.com",
   snowflake: "snowflake.com",
   databricks: "databricks.com",
-  segment: "segment.com",
+  supabase: "supabase.com",
 };
 
 const OUT_DIR = path.join(process.cwd(), "public", "logos");

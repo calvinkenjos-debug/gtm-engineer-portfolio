@@ -5,13 +5,29 @@ interface DiagramNodeProps {
   sublabel?: string;
   tool?: { name: string; slug: string };
   accent?: boolean;
+  /** Show only the tool mark, no text label — for dense rows of source logos. */
+  logoOnly?: boolean;
   style: React.CSSProperties;
 }
 
 // A single positioned node in a hand-built workflow diagram: a small glass
 // card carrying a real tool logo when the step maps to a specific tool, or
 // a plain label when it's a generic step (e.g. "Inbound lead").
-export function DiagramNode({ label, sublabel, tool, accent, style }: DiagramNodeProps) {
+export function DiagramNode({ label, sublabel, tool, accent, logoOnly, style }: DiagramNodeProps) {
+  if (tool && logoOnly) {
+    return (
+      <div
+        className="absolute flex items-center justify-center rounded-tag glass-panel"
+        style={style}
+        aria-label={label}
+      >
+        <div className="rounded-[8px] bg-surface p-1.5 shadow-[0_1px_2px_rgba(20,21,26,0.06)]">
+          <ToolLogo name={tool.name} slug={tool.slug} size={26} />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       className={`absolute flex flex-col items-center justify-center gap-1 rounded-tag px-2 text-center ${
