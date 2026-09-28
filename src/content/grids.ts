@@ -6,6 +6,8 @@ export interface Grid {
   mainPurpose: string;
   description: string;
   columns: string[];
+  /** Slug for a walkthrough video at /videos/<slug>.mp4 + /videos/<slug>.jpg (poster). */
+  videoSlug?: string;
 }
 
 export const grids: Grid[] = [
@@ -28,6 +30,7 @@ export const grids: Grid[] = [
       "Consent or Opt-Out Status",
       "Data Quality Status",
     ],
+    videoSlug: "grid00",
   },
   {
     id: "early-stage-outbound",
@@ -65,6 +68,7 @@ export const grids: Grid[] = [
       "Recommended Owner",
       "Routing Reason",
     ],
+    videoSlug: "grid002",
   },
   {
     id: "growth-signals",

@@ -6,7 +6,6 @@ import { Stages } from "@/components/Stages";
 import { Systems } from "@/components/Systems";
 import { Proof } from "@/components/Proof";
 import { Process } from "@/components/Process";
-import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 import { Footer } from "@/components/Footer";
@@ -23,7 +22,6 @@ export default function Home() {
         <Systems />
         <Proof />
         <Process />
-        <Testimonials />
         <Faq />
         <Cta />
       </main>

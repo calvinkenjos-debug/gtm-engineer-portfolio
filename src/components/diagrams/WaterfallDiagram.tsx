@@ -27,7 +27,7 @@ export function WaterfallDiagram() {
         {sourceCenterY.map((y) => (
           <path
             key={y}
-            d={`M26 ${y} C 44 ${y}, 44 49, 62 49`}
+            d={`M11 ${y} C 32 ${y}, 32 49, 62 49`}
             fill="none"
             stroke="var(--color-border-strong)"
             strokeWidth="0.4"
@@ -41,7 +41,7 @@ export function WaterfallDiagram() {
           label={source.name}
           tool={{ name: source.name, slug: source.slug }}
           logoOnly
-          style={{ left: "2%", top: source.top, width: "24%", height: "15%" }}
+          style={{ left: "2%", top: source.top, width: "9%", height: "15%" }}
         />
       ))}
 

@@ -3,6 +3,7 @@ import { grids } from "@/content/grids";
 import { Reveal } from "@/components/Reveal";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { LazyVideo } from "@/components/LazyVideo";
 
 export const metadata: Metadata = {
   title: "The Grid Room",
@@ -57,6 +58,14 @@ export default function GridRoomPage() {
                     <p className="mt-4 max-w-[80ch] text-sm leading-relaxed text-ink-secondary">
                       {grid.description}
                     </p>
+
+                    {grid.videoSlug && (
+                      <LazyVideo
+                        className="mt-5 aspect-video w-full max-w-[720px] overflow-hidden rounded-tag border border-border"
+                        src={`/videos/${grid.videoSlug}.mp4`}
+                        poster={`/videos/${grid.videoSlug}.jpg`}
+                      />
+                    )}
 
                     <div className="mt-5 flex flex-wrap gap-2 border-t border-border pt-5">
                       {grid.columns.map((col) => (

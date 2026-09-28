@@ -1,31 +1,15 @@
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { siteConfig } from "@/lib/site-config";
 import { ToolLogo } from "@/components/ToolLogo";
-import { BlackHoleHeroSection } from "@/components/BlackHoleHero";
 import { CyclingWord } from "@/components/CyclingWord";
 
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      {/* Right side of the hero: a rendered black hole (WebGL ray march)
-          anchoring the floating glass cards, replacing the old flat gradient. */}
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[52%] overflow-hidden md:block" aria-hidden>
-        <BlackHoleHeroSection
-          className="h-full w-full"
-          focus={[0.5, 0.46]}
-          scrim="left"
-          scrimStrength={0.55}
-          fov={46}
-          distance={22}
-          resolution={0.6}
-          steps={220}
-        />
-      </div>
-
       <div className="mesh-glow pointer-events-none absolute inset-0" aria-hidden />
 
-      <div className="relative mx-auto max-w-[1200px] px-6 pt-16 pb-24 md:pt-20 md:pb-32">
-        <div className="md:max-w-[600px]">
+      <div className="relative mx-auto grid max-w-[1200px] gap-12 px-6 pt-16 pb-24 md:grid-cols-[1.3fr_1fr] md:items-center md:pt-20 md:pb-32">
+        <div>
           <span className="inline-flex items-center gap-2 rounded-pill border border-border bg-surface px-3 py-1.5">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
@@ -64,10 +48,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Floating glass stack: over the portrait on desktop, stacked at
-            slight offsets like the reference; a plain wrapped row on mobile
-            where there's no photo behind them. */}
-        <div className="mt-16 flex flex-wrap gap-4 md:absolute md:right-6 md:top-1/2 md:mt-0 md:w-[300px] md:-translate-y-1/2 md:flex-col md:gap-5">
+        <div className="flex flex-wrap gap-4 md:flex-col">
           <div className="glass-panel flex w-full max-w-[220px] flex-col gap-2 rounded-card p-4 md:max-w-none">
             <span className="mono-tag text-ink-faint">Routing SLA</span>
             <div className="flex items-baseline gap-1">
@@ -79,7 +60,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="glass-panel flex w-full max-w-[240px] items-center gap-3 rounded-card p-4 md:max-w-none md:translate-x-4">
+          <div className="glass-panel flex w-full max-w-[240px] items-center gap-3 rounded-card p-4 md:max-w-none">
             <div className="rounded-tag bg-surface p-1.5">
               <ToolLogo name="n8n" slug="n8n" size={22} />
             </div>
