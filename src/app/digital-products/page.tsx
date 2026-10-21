@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { Basket } from "@lucasmarkes/hairline/react";
 
 export const metadata: Metadata = {
   title: "Digital Products",
@@ -17,6 +18,7 @@ export default function DigitalProductsPage() {
         <section className="flex min-h-[60vh] items-center border-b border-border py-20 md:py-28">
           <div className="mx-auto max-w-[1200px] px-6">
             <Reveal>
+              <div className="grid items-center gap-10 md:grid-cols-[1.4fr_1fr]">
               <div className="glass-panel max-w-[60ch] rounded-card p-8 md:p-10">
                 <span className="mono-tag text-accent">Digital Products</span>
                 <h1 className="mt-3 text-2xl font-medium tracking-tight text-ink md:text-3xl">
@@ -26,6 +28,8 @@ export default function DigitalProductsPage() {
                   This space is reserved for upcoming productized GTM offers — templates,
                   tools, and packaged systems. Nothing&apos;s live here yet; check back soon.
                 </p>
+              </div>
+              <Basket className="mx-auto w-full max-w-[320px] [--hairline-plate:var(--color-canvas)]" aria-label="Empty basket" play />
               </div>
             </Reveal>
           </div>

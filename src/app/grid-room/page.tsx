@@ -4,6 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { LazyVideo } from "@/components/LazyVideo";
+import { Hub } from "@lucasmarkes/hairline/react";
 
 export const metadata: Metadata = {
   title: "The Grid Room",
@@ -19,6 +20,8 @@ export default function GridRoomPage() {
         <section className="border-b border-border py-20 md:py-28">
           <div className="mx-auto max-w-[1200px] px-6">
             <Reveal>
+              <div className="grid items-center gap-10 md:grid-cols-[1.4fr_1fr]">
+                <div>
               <span className="mono-tag text-accent">The Grid Room</span>
               <h1 className="mt-3 max-w-[32ch] text-3xl font-medium tracking-tight text-ink md:text-4xl">
                 Six systems, one architecture, built to hold up under a prospect&apos;s scrutiny.
@@ -30,6 +33,9 @@ export default function GridRoomPage() {
                 governance. Video walkthroughs of each build are in progress; this page tracks
                 the actual logic — columns, prompts, routing rules — behind every one.
               </p>
+                </div>
+                <Hub className="mx-auto w-full max-w-[380px] [--hairline-plate:var(--color-canvas)]" aria-label="Shared data foundation feeding segment systems" play />
+              </div>
             </Reveal>
           </div>
         </section>
